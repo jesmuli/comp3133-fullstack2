@@ -1,0 +1,19 @@
+{
+  "name": "lab01_101214794",
+  "version": "1.0.0",
+  "description": "LabEx1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fs",
+    "file",
+    "system"
+  ],
+  "author": "Jes Muli",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
