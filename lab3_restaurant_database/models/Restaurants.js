@@ -26,30 +26,43 @@ const RestaurantSchema = new mongoose.Schema({
     lowercase: true 
   },
 
-  cuisine: {
+  'address.geo': {
+    type:Object,
+  },
+  'address.geo.lat': {
     type: String,
-    required: true,
-    trim: true,
-    lowercase: false
+    required: true
+  },
+  'address.geo.lng': {
+    type: String,
+    required: true
   },
 
-  name: {
+  phone:{
     type: String,
-    required: true,
-    trim: false,
-    lowercase: true
+    required: true
   },
 
-  restaurant_id: {
+  website: {
     type: String,
-    required: [true,"Please Enter the ID"],
-    unique:[true,"Duplicate ID Not Allowed"],
-    trim: true,
-    maxlength: 8,
-    validate: function(value) {
-        var idRegex = /^[0-9]{8}$/; // only accept 8 digits
-        return idRegex.test(value);
-      }
+    required: true
+  },
+
+  company: {
+    type:Object,
+  },
+
+  'company.name': {
+    type: String,
+    required: true
+  },
+  'company.catchPhrase':  {
+    type: String,
+    required: true
+  },
+  'company.bs':  {
+    type: String,
+    required: true
   },
 
 });

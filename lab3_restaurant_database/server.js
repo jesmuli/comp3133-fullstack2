@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json()); // Make sure it comes back as json
 
 //TODO - Replace you Connection String here
-mongoose.connect('<!--connection inserted-->', {
+mongoose.connect('<!--connection is replaced for privacy reasons-->', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
